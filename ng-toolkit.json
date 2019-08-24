@@ -1,0 +1,13 @@
+{
+  "serverless": {
+    "provider": "aws",
+    "skipInstall": false,
+    "directory": ".",
+    "project": "softrams-racing",
+    "clientProject": "softrams-racing",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
