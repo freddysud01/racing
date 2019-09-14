@@ -1,0 +1,21 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      -echo Echo install
+  finally:
+    -echo install finally
+    
+  pre_build:
+    commands:
+      -echo Pre Build
+
+  build:
+   commands:
+    -echo build
+
+  post_build:
+    commands:
+      -echo post build
+    
