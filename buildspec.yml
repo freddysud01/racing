@@ -5,17 +5,20 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
-      -echo Echo install 
+      - echo Echo install 
 
   pre_build:
     commands:
-      -echo Pre Build
+      - echo Pre Build
+      - npm install     
 
   build:
-   commands:
-    -echo build
+    commands:
+      - echo build phase
+      - npm run build
 
   post_build:
     commands:
-      -echo post build
+      - echo post build
+      - aws s3 sync ./dist/softrams-racing s3://angularfinal
     
