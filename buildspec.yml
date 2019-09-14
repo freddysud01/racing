@@ -20,5 +20,5 @@ phases:
   post_build:
     commands:
       - echo post build
-      - aws s3 sync ./dist/softrams-racing s3://angularfinal
+      - aws s3 sync ./dist/softrams-racing s3://duffbuck
     
